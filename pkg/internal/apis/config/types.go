@@ -69,6 +69,9 @@ type Cluster struct {
 	// in the order listed.
 	// These should be YAML or JSON formatting RFC 6902 JSON patches
 	ContainerdConfigPatchesJSON6902 []string
+
+	// PID is --pid option for a provider container runtime
+	PID string `yaml:"pid,omitempty"`
 }
 
 // Node contains settings for a node in the `kind` Cluster.
